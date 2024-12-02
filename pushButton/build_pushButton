@@ -1,0 +1,6 @@
+#!/bin/bash
+
+config-pin p8.16 gpio_input
+config-pin p8.16 gpio_pu
+g++ pushButton_publish.cpp Gpio.cpp -o pushButton_publish -lpaho-mqtt3c
+

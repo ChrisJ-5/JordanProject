@@ -1,0 +1,4 @@
+#!/bin/bash
+config-pin p9.12 gpio
+
+g++ toggleLED_subscribe.cpp Gpio.cpp -o toggleLED_subscribe -lpaho-mqtt3c

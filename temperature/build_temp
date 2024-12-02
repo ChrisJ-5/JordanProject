@@ -1,0 +1,4 @@
+#!/bin/bash
+g++ temp_subscribe.cpp LED.cpp -o temp_subscribe -lpaho-mqtt3c
+g++ temp_publish.cpp AnalogIn.cpp -o temp_publish -lpaho-mqtt3c
+

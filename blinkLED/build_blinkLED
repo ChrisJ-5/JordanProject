@@ -1,0 +1,3 @@
+#!/bin/bash
+
+g++ blinkLED_subscribe.cpp LED.cpp -o blinkLED_subscribe -lpaho-mqtt3c

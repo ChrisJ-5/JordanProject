@@ -1,0 +1,4 @@
+#!/bin/bash
+config-pin p9.22 gpio
+
+g++ momentaryLED_subscribe.cpp Gpio.cpp -o momentaryLED_subscribe -lpaho-mqtt3c

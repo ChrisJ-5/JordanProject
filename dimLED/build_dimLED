@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "configure pin p9.22 for pwm"
+
+config-pin -q p9.22
+config-pin p9.22 pwm
+config-pin -q p9.22
+
+g++ dimLED_subscribe.cpp PWM.cpp util.cpp -o dimLED_subscribe -lpaho-mqtt3c
+

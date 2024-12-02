@@ -1,0 +1,4 @@
+#!/bin/bash
+
+g++ potentiometer_publish.cpp AnalogIn.cpp -o potentiometer_publish -lpaho-mqtt3c
+
